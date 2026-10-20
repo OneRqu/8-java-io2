@@ -1,10 +1,13 @@
 package com.example.task03;
 
+import java.io.Serial;
+import java.io.Serializable;
 import java.util.Date;
 import java.util.Objects;
 
-public class SampleData {
-    static final long serialVersionUID = 132706691457162967L;
+public class SampleData implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 132706691457162967L;
 
     String name;
     int value;
